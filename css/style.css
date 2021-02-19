@@ -7,8 +7,8 @@
 
 .cloud1{
 	position:absolute;
-	width:1200px;
-	height:600px;
+	width:100%;
+	height:800px;
 	top:40px;
     background-image:url(https://pngimg.com/uploads/cloud/cloud_PNG24.png);
     background-repeat:no-repeat;
@@ -20,62 +20,92 @@
     
 
  @keyframes cloud{
- 	0%{ transform:translateX(50px); }
- 	25%{transform:translateX(150px);}
- 	50%{transform:translateX(350px);}
- 	70%{transform:translateX(550px);}
- 	100%{transform:translateX(550px);}
+ 	0%{ transform:translate(50px 50px); }
+ 	25%{transform:translate(150px 150px);}
+ 	50%{transform:translate(200px 200px);}
+ 	100%{transform:translate(250px 250px);}
 
  }
 
  .cloud2{
  	position:absolute;
- 	width:800px;
+ 	width:100%;
  	height:400px;
  	top:10px;
- 	right:250px;
+ 	
     background-image: url(http://pngimg.com/uploads/cloud/cloud_PNG32.png);
  	background-repeat:no-repeat;
  	animation: mycloud 40s infinite;
+ 	animation-direction:alternate;
  	
  	
 
  }
  	@keyframes mycloud{
     0%{ transform:translateX(50px); }
- 	25%{transform:translateX(350px);}
- 	50%{transform:translateX(450px);}
- 	70%{transform:translateX(550px);}
- 	100%{transform:translateX(1000px);}
+ 	25%{transform:translateX(150px);}
+ 	50%{transform:translateX(250px);}
+ 	70%{transform:translateX(350px);}
+ 	100%{transform:translateX(400px);}
 
  	}
 
 .cloud3{
 	position:absolute;
- 	width:800px;
- 	height:400px;
- 	top:10px;
- 	left:250px;
-    background-image: url(http://pngimg.com/uploads/cloud/cloud_PNG32.png);
+ 	width:100%;
+ 	height:600px;
+ 	top:5px;
+ 	background-image: url(http://pngimg.com/uploads/cloud/cloud_PNG32.png);
  	background-repeat:no-repeat;
- 	animation: imagecloud 40s infinite;}
+ 	animation: imagecloud 40s infinite;
+    animation-direction:alternate;
+    z-index:6;
+}
+ 	
+    
  	
 }
 
  @keyframes imagecloud{
     0%{ transform:translateX(50px); }
- 	25%{transform:translateX(350px);}
- 	50%{transform:translateX(450px);}
- 	70%{transform:translateX(550px);}
- 	100%{transform:translateX(1000px);}
+ 	25%{transform:translateX(250px);}
+ 	50%{transform:translateX(350px);}
+ 	70%{transform:translateX(400px);}
+ 	100%{transform:translateX(450px);}
+ }
+
+ 	.cloud4{
+ 	position:absolute;
+ 	width:100%;
+ 	height:500px;
+ 	top:20px;
+ 	left:300px;
+ 	background-image:url(https://pngimg.com/uploads/cloud/cloud_PNG24.png);
+ 	background-repeat:no-repeat;
+ 	animation-direction:alternate;
+ 	animation: aircloud 15s infinite;
+
+
  	}
+ 	 @keyframes aircloud{
+ 	0%{ transform:translateY(50px); }
+ 	25%{transform:translateY(150px);}
+ 	50%{transform:translateY(200px);/}
+ 	100%{transform:translateY(250px);}
+
+ }
+
+ 	
 .air{
 	position:absolute;
 	top:50px;
-	width:50px;
-	height:25px;
+	width:150px;
+	height:240px;
 	left:20px;
-	background-image:url("http://pngimg.com/image/19410");
+	background-image:url(https://pngimg.com/uploads/air_balloon/air_balloon_PNG19410.png?fbclid=IwAR3mO_aTFXvne2PgwRXoK4MbtYcTqmdCVMD_TarMFA2HHzK2VM9_G9DzGXs);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
 	z-index:3;
 	animation: airballon 30s infinite
 
@@ -87,5 +117,48 @@
   75%  {top: 50px}
   100% {top: 100px;}
 }
+
+.balloon{
+	position:absolute;
+	top:5px;
+	width:150px;
+	height:240px;
+	right:300px;
+	background-image:url(https://svg-clipart.com/svg/red/TpM9TCM-hot-air-balloon-vector.svg);
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    animation:myballoon 20s infinite;
+
+}
+
+@keyframes myballoon {
+  0%   {top: 0px;}
+  25%  {top: 150px;}
+  75%  {top: 100px}
+  100% {top: 90px;}
+}
+
+.ballon{
+	position:absolute;
+	top:10px;
+	width:100px;
+	height:140px;
+	right:600px;
+	background-image:url(https://svg-clipart.com/clipart/black/zlH2u5L-balloon-clipart.png);
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    animation:ballonair 15s infinite;
+
+}
+
+@keyframes ballonair {
+  0%   {top: 0px;}
+  25%  {top: 150px;}
+  75%  {top: 100px}
+  100% {top: 90px;}
+}
+
 
 
